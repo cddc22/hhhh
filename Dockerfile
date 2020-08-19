@@ -3,7 +3,7 @@ FROM ubuntu:18.04
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
 RUN apt-get -qq update
-RUN apt-get -qq install -y epel-release update upgrade wget curl git unzip zip python3-distutils python3 python3-pip
+RUN apt-get -qq install -y wget curl git unzip zip python3-distutils python3 python3-pip
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt-get install nodejs -y
 RUN git clone https://github.com/cddc22/her.git && cd her
