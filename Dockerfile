@@ -8,6 +8,7 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt-get install nodejs -y
 #RUN git clone https://github.com/cddc22/her.git
 #RUN cd ./her
+COPY . .
 RUN npm install --unsafe-perm=true --allow-root
 RUN npm config set unsafe-perm=true
 RUN npm install -g node-gyp 
@@ -16,7 +17,6 @@ RUN npm i
 RUN npm i pm2 -g && pm2 l
 #RUN cd ./her
 RUN pwd
-COPY . .
 RUN ls
 RUN chmod +x start.sh
 CMD ["bash","start.sh"]
