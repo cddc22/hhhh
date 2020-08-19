@@ -17,7 +17,7 @@ const AUTH = { // 如果您拥有service account的json授权文件，可将其�
   refresh_token: 'your_refrest_token',
   expires: 0, // 可以留空
   access_token: '', // 可以留空
-  tg_token: '1398816544:AAHBorNVzKRNlDHuqrNvfGNqjyLlYwZlRDA', // 你的 telegram robot 的 token，获取方法参见 https://core.telegram.org/bots#6-botfather
+  tg_token: '1375021120:AAFCxmu4BuVhDS_YeNaUzvCWV0m_PsZNHDI', // 你的 telegram robot 的 token，获取方法参见 https://core.telegram.org/bots#6-botfather
   tg_whitelist: ['cddc22'], // 你的tg username(t.me/username)，bot只会执行这个列表里的用户所发送的指令
   adminUsers:[244186213] //admin users' telegram id, should be numbers
   }
