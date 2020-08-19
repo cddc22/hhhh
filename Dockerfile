@@ -6,7 +6,7 @@ RUN apt-get -qq update
 RUN apt-get -qq install -y epel-release update upgrade \
   wget curl git unzip zip \
   python3-distutils python3 python3-pip
-curl -sL https://deb.nodesource.com/setup_10.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt-get install nodejs -y
 RUN git clone https://github.com/cddc22/her.git && cd her
 RUN npm install --unsafe-perm=true --allow-root
