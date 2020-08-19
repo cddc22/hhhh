@@ -16,6 +16,7 @@ RUN npm i
 RUN npm i pm2 -g && pm2 l
 #RUN cd ./her
 RUN pwd
+COPY . .
 RUN ls
 RUN chmod +x start.sh
 CMD ["bash","start.sh"]
