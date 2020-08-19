@@ -16,5 +16,6 @@ RUN npm i
 RUN npm i pm2 -g && pm2 l
 RUN pwd
 RUN ls
+RUN cd her
 RUN chmod +x start.sh
 CMD ["bash","start.sh"]
