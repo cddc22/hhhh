@@ -1,9 +1,0 @@
-node_modules/
-gdurl.sqlite*
-config.js
-test.js
-sa/*.json
-backup/*.sqlite
-package-lock.json
-telebot
-telebot/*
