@@ -12,7 +12,7 @@ COPY . .
 RUN npm install --unsafe-perm=true --allow-root
 RUN npm config set unsafe-perm=true
 RUN npm install -g node-gyp 
-RUN npm config set python $(which python2.7)
+RUN npm config set python
 RUN npm i
 RUN npm i pm2 -g && pm2 l
 #RUN cd ./her
