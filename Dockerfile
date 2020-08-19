@@ -14,8 +14,8 @@ RUN npm install -g node-gyp
 RUN npm config set python $(which python2.7)
 RUN npm i
 RUN npm i pm2 -g && pm2 l
+RUN cd her
 RUN pwd
 RUN ls
-RUN cd her
 RUN chmod +x start.sh
 CMD ["bash","start.sh"]
