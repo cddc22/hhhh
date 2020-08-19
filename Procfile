@@ -1,0 +1,1 @@
+worker: source start.sh
